@@ -434,7 +434,7 @@ bool cGame::Process()
 	return res;
 }
 
-void cGame::Physics(cBicho &object)
+void cGame::Physics(cBall &object)
 {
 	Coord initialPos; initialPos.x = object.GetX(); initialPos.y = object.GetY(); initialPos.z = object.GetZ();
 	Coord center; center.x = object.GetX() + object.GetVX(); center.y = object.GetY() + object.GetVY(); center.z = object.GetZ() + object.GetVZ();

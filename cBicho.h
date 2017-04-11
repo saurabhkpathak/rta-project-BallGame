@@ -2,11 +2,11 @@
 
 #include "cScene.h"
 
-class cBicho
+class cBall
 {
 public:
-	cBicho(void);
-	~cBicho(void);
+	cBall(void);
+	~cBall(void);
 
 	void  SetPos(float posx, float posy, float posz);
 	void  SetX(float posx);

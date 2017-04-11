@@ -2,7 +2,7 @@
 #include "cGame.h"
 
 //Delete console
-#pragma comment(linker, "/subsystem:\"windows\" /entry:\"mainCRTStartup\"")
+//#pragma comment(linker, "/subsystem:\"windows\" /entry:\"mainCRTStartup\"")
 
 cGame Game;
 
@@ -61,7 +61,7 @@ void main(int argc, char** argv)
 	
 	glutInitWindowPosition(pos_x,pos_y);
 	glutInitWindowSize(SCREEN_WIDTH,SCREEN_HEIGHT);
-	glutCreateWindow("The Ballenger");
+	glutCreateWindow("Animation Ball Game");
 	//glutFullScreen();
 
 	/*glutGameModeString("800x600:32");

@@ -71,5 +71,5 @@ private:
 	cTerrain Terrain;
 	cLava Lava;
 
-	void Physics(cBicho &object);
+	void Physics(cBall &object);
 };

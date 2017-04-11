@@ -5,9 +5,9 @@ cSkybox::~cSkybox(){}
 
 void cSkybox::Load(float zfar)
 {
-	float dist = zfar*cos(45.0f); //zfar a secas era la distancia del jugador a una de las esquinas de la hitbox
-	float th = 1.0f/3.0f; // un tercio en coordenadas de textura
-	float of = (1.0f/1024.0f)/2; //offset de ~1/2 texel
+	float dist = zfar*cos(45.0f); //Zfar to dry was the distance of the player to one of the corners of the hitbox
+	float th = 1.0f/3.0f; // One third in texture coordinates
+	float of = (1.0f/1024.0f)/2; //the offset ~ 1/2 texel
 
 	id_Skybox=glGenLists(1);
 	glNewList(id_Skybox,GL_COMPILE);

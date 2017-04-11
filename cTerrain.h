@@ -23,7 +23,7 @@ public:
 	float GetSegmentIntersectionLambda(float x,float y,float z, float vx,float vy,float vz, float dist);
 
 private:
-	GLubyte heightmap[TERRAIN_SIZE * TERRAIN_SIZE]; //representa los vertices del heightmap, cada texel sera un vertex
+	GLubyte heightmap[TERRAIN_SIZE * TERRAIN_SIZE]; //Represents the vertices of the heightmap, each texel will be a vertex
 	std::vector<Triangle> triangles;
 	int id_Terrain,id_Normals;
 

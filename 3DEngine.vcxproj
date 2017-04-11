@@ -97,7 +97,7 @@
     <ClInclude Include="cRespawnPoint.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="cBicho.cpp" />
+    <ClCompile Include="cBall.cpp" />
     <ClCompile Include="cCamera.cpp" />
     <ClCompile Include="cData.cpp" />
     <ClCompile Include="cGame.cpp" />

@@ -22,56 +22,56 @@ int cModel::GetDisplayList(char* path)
 		if(c =='v')
 		{
 			Coord aux;
-			fscanf(fd,"%c",&c); //espacio
+			fscanf(fd,"%c",&c); //space
 			fscanf(fd,"%f",&aux.x);
-			fscanf(fd,"%c",&c); //espacio
+			fscanf(fd,"%c",&c); //space
 			fscanf(fd,"%f",&aux.y);
-			fscanf(fd,"%c",&c); //espacio
+			fscanf(fd,"%c",&c); //space
 			fscanf(fd,"%f",&aux.z);
 
 			vertexs.push_back(aux);
-			fscanf(fd,"%c",&c); //salto de linea
+			fscanf(fd,"%c",&c); //Line jump
 		}
 		if(c =='t')
 		{
 			std::pair<float,float> st;
-			fscanf(fd,"%c",&c); //espacio
+			fscanf(fd,"%c",&c); //space
 			fscanf(fd,"%f",&st.first);
-			fscanf(fd,"%c",&c); //espacio
+			fscanf(fd,"%c",&c); //space
 			fscanf(fd,"%f",&st.second);
 
 			texcoords.push_back(st);
-			fscanf(fd,"%c",&c); //salto de linea
+			fscanf(fd,"%c",&c); //Line jump
 		}
 		if(c =='n')
 		{
 			Coord aux;
-			fscanf(fd,"%c",&c); //espacio
+			fscanf(fd,"%c",&c); //space
 			fscanf(fd,"%f",&aux.x);
-			fscanf(fd,"%c",&c); //espacio
+			fscanf(fd,"%c",&c); //space
 			fscanf(fd,"%f",&aux.y);
-			fscanf(fd,"%c",&c); //espacio
+			fscanf(fd,"%c",&c); //space
 			fscanf(fd,"%f",&aux.z);
 			
 			normals.push_back(aux);
-			fscanf(fd,"%c",&c); //salto de linea
+			fscanf(fd,"%c",&c); //Line jump
 		}
 		if(c =='f')
 		{
 			std::vector< std::vector<int> > points;
 			std::vector<int> point(3);
 			
-			fscanf(fd,"%c",&c); //espacio
+			fscanf(fd,"%c",&c); //space
 			
 			do {
 				fscanf(fd,"%d",&point[0]);
-				fscanf(fd,"%c",&c); //separador
+				fscanf(fd,"%c",&c); //Separator
 				fscanf(fd,"%d",&point[1]);
-				fscanf(fd,"%c",&c); //separador
+				fscanf(fd,"%c",&c); //Separator
 				fscanf(fd,"%d",&point[2]);
 
 				points.push_back(point);
-				fscanf(fd,"%c",&c); //espacio o salto de linea
+				fscanf(fd,"%c",&c); //Space or line break
 			} while(c ==' ');
 
 			faces.push_back(points);

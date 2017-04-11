@@ -10,7 +10,7 @@
 #define MAX_MOVEMENT 0.4f
 #define RADIUS   0.5f
 
-class cPlayer: public cBicho
+class cPlayer: public cBall
 {
 public:
 	cPlayer();

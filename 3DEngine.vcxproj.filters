@@ -28,9 +28,6 @@
     <ClCompile Include="cSound.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="cBicho.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="cTerrain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -53,6 +50,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="cColumn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cBall.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

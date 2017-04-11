@@ -1,15 +1,11 @@
-﻿Build started 4/11/2017 2:02:10 PM.
+﻿Build started 4/11/2017 6:58:16 PM.
      1>Project "C:\Users\Saurabh\Desktop\rta-project-BallGame\3DEngine.vcxproj" on node 2 (Build target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Release\) contains files shared from another project (3DEngine.vcxproj).  This can lead to incorrect clean and rebuild behavior.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Release\\" /Fd"Release\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt cBicho.cpp cCamera.cpp cData.cpp cGame.cpp cKey.cpp cLava.cpp cColumn.cpp cModel.cpp cPlayer.cpp cPortal.cpp cScene.cpp cShader.cpp cSkybox.cpp cSound.cpp cTerrain.cpp cTexture.cpp GLUTMain.cpp cRespawnPoint.cpp
-         cBicho.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Release\\" /Fd"Release\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt cBall.cpp cCamera.cpp cGame.cpp cModel.cpp cPlayer.cpp cScene.cpp cShader.cpp cSkybox.cpp cTerrain.cpp GLUTMain.cpp
+         cBall.cpp
          cCamera.cpp
-         cData.cpp
          cGame.cpp
-         cKey.cpp
-         cLava.cpp
-         cColumn.cpp
          cModel.cpp
      1>cModel.cpp(16): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
          C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
@@ -68,11 +64,9 @@
      1>cModel.cpp(74): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
          C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
          cPlayer.cpp
-         cPortal.cpp
          cScene.cpp
          cShader.cpp
          cSkybox.cpp
-         cSound.cpp
          cTerrain.cpp
      1>cTerrain.cpp(109): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
          C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
@@ -80,11 +74,9 @@
          C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
      1>cTerrain.cpp(111): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
          C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
-         cTexture.cpp
          GLUTMain.cpp
-         cRespawnPoint.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Saurabh\Desktop\rta-project-BallGame\Release\rta-project-BallGame.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Saurabh\Desktop\rta-project-BallGame\Release\rta-project-BallGame.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Saurabh\Desktop\rta-project-BallGame\Release\rta-project-BallGame.lib" /MACHINE:X86 /SAFESEH Release\cBicho.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Saurabh\Desktop\rta-project-BallGame\Release\rta-project-BallGame.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Saurabh\Desktop\rta-project-BallGame\Release\rta-project-BallGame.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Saurabh\Desktop\rta-project-BallGame\Release\rta-project-BallGame.lib" /MACHINE:X86 /SAFESEH Release\cBall.obj
          Release\cCamera.obj
          Release\cData.obj
          Release\cGame.obj
@@ -103,11 +95,13 @@
          Release\GLUTMain.obj
          Release\cRespawnPoint.obj
          Generating code
-         All 1255 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+         36 of 1255 functions ( 2.9%) were compiled, the rest were copied from previous compilation.
+           21 functions were new in current compilation
+           3 functions had inline decision re-evaluated but remain unchanged
          Finished generating code
          3DEngine.vcxproj -> C:\Users\Saurabh\Desktop\rta-project-BallGame\Release\rta-project-BallGame.exe
      1>Done Building Project "C:\Users\Saurabh\Desktop\rta-project-BallGame\3DEngine.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:16.74
+Time Elapsed 00:00:09.73
